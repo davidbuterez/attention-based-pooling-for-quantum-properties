@@ -1,5 +1,7 @@
 # Modelling local and general quantum mechanical properties with attention-based pooling
 
+![](main_figure.png)
+
 # General
 This repository contains the source code accompanying the paper **Modelling local and general quantum mechanical properties with attention-based pooling**. It can be used to run all the experiments presented in the paper. It also includes all the random seeds and settings required for reproducibility.
 
