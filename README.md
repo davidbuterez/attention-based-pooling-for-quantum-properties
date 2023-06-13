@@ -3,7 +3,7 @@
 ![](main_figure.png)
 
 # General
-This repository contains the source code accompanying the paper **Modelling local and general quantum mechanical properties with attention-based pooling**. It can be used to run all the experiments presented in the paper. It also includes all the random seeds and settings required for reproducibility.
+This repository contains the source code accompanying the paper [Modelling local and general quantum mechanical properties with attention-based pooling](https://chemrxiv.org/engage/chemrxiv/article-details/6481a504be16ad5c57a44abd). It can be used to run all the experiments presented in the paper. It also includes all the random seeds and settings required for reproducibility.
 
 # Abstract
 Atom-centred neural networks represent the state-of-the-art for approximating the quantum chemical properties of molecules, such as internal energies. While the design of machine learning architectures that respect chemical principles has continued to advance, the final atom pooling operation that is necessary to convert from atomic- to molecular-representations in most models remains relatively undeveloped. The most common choices, sum and average pooling, compute molecular representations that are naturally a good fit for many physical properties, while satisfying properties such as permutation invariance which are desirable from a geometric deep learning perspective. However, there are growing concerns that such simplistic functions might have limited representational power, while also being suboptimal for physical properties that are highly localised or intensive. Based on recent advances in graph representation learning, we investigate the use of a learnable pooling function that leverages an attention mechanism to model interactions between atom representations. The proposed pooling operation is a drop-in replacement requiring no changes to any of the other architectural components. Using SchNet and DimeNet++ as starting models, we demonstrate consistent uplifts in performance compared to sum pooling and a recent physics-aware pooling operation designed specifically for orbital energies, on several datasets, properties, and levels of theory. The uplifts range from 3\% to 70\% depending on the specific task.
@@ -135,7 +135,16 @@ For the exact versions that we used, please check the conda environment files in
 # Citations
 If you use or mention our work, a citation is appreciated:
 ```
-TODO
+@article{
+	buterez_janet_kiddle_oglic_liò_2023,
+	place={Cambridge},
+	title={Modelling local and general quantum mechanical properties with attention-based pooling},
+	DOI={10.26434/chemrxiv-2023-301gj},
+	journal={ChemRxiv},
+	publisher={Cambridge Open Engage},
+	author={Buterez, David and Janet, Jon Paul and Kiddle, Steven J. and Oglic, Dino and Liò, Pietro},
+	year={2023}
+}
 ```
 
 The work presented here is a follow-up of our previous work on graph readout functions presented at NeurIPS 2022:
