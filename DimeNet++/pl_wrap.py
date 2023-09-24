@@ -6,9 +6,8 @@ from collections import defaultdict
 from torch import nn
 from torch.nn import functional as F
 from torch_geometric.utils import to_dense_batch
-from torch_geometric.nn.models import DimeNetPlusPlus
 
-
+from dimenet import DimeNetPlusPlus
 from reporting import get_metrics
 
 
